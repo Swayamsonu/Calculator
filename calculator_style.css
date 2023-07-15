@@ -1,0 +1,86 @@
+body{
+margin: 0;
+padding: 0;
+}
+.parent{
+position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('calculator.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    background: linear-gradient(to left, #f700ff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+.center{
+    padding:6px;
+    background-image: url('/caculator1.jpg');
+    background-position: center;
+    height: 65vh;
+    width: 30vw;
+    color:rgb(247, 112, 8);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 10px rgb(128 0 122);
+    transition: 0.4s ease;
+ }
+.center:hover{
+    box-shadow: 0px 0px 25px 15px rgb(131, 24, 170);
+
+}
+
+ .buttons{
+    display: flex;
+    flex-direction:column;
+ }
+.first,.second,.third,.fourth,.fifth{
+    border-width: 3px;
+}
+.first>button,.second>button,.third>button,.fourth>button,.fifth>button{
+    width:7vw;
+    border: none;
+    margin-top: 5px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: rgb(8, 8, 220);
+    color: rgb(255, 51, 0);
+    cursor: pointer;
+    transition: color 1s ;
+    
+}
+
+.first>button:hover,.second>button:hover,.third>button:hover,.fourth>button:hover,.fifth>button:hover{
+
+color:rgb(208, 255, 0);
+background-color: rgb(222, 59, 0);
+box-shadow: 1px 1px 5px 5px yellow;
+
+}
+
+input[type=text]{
+    border: none;
+    /* border: 3px solid #ccc; */
+    width: 28vw;
+    height: 7vh;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 3px 5px rgb(0, 255, 94);
+    transition: 0.2s;
+}
+
+
+input[type=text]:focus{
+    border: 5px solid rgb(255, 204, 0);
+}

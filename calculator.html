@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator_style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="center">
+<h2>CALCULATOR</h2>
+<input type="text" id="texts" placeholder="Enter The Value" value="">
+<div class="buttons">
+    
+    <div class="first">
+    <button id="AC" onclick="clearDisplay()">AC</button>
+    <button id="DEL" onclick="clearLast()">DEL</button>
+    <button id="Addition" onclick="clicks('+')" style="width: 14vw;">+</button>
+    </div>
+    
+    <div class="second">
+    <button id="9" onclick="clicks('9')">9</button>
+    <button id="8" onclick="clicks('8')">8</button>
+    <button id="7" onclick="clicks('7')">7</button>
+    <button id="Division" onclick="clicks('/')">/</button>
+    </div>
+    
+    <div class="third">
+    <button id="6" onclick="clicks('6')">6</button>
+    <button id="5" onclick="clicks('5')">5</button>
+    <button id="4" onclick="clicks('4')">4</button>
+    <button id="Mulitiplication" onclick="clicks('*')">*</button>
+    </div>
+    
+    <div class="fourth">
+    <button id="3" onclick="clicks('3')">3</button>
+    <button id="2" onclick="clicks('2')">2</button>
+    <button id="1" onclick="clicks('1')">1</button>
+    <button id="Subtraction" onclick="clicks('-')">-</button>
+    </div>
+
+    <div class="fifth">
+    <button id="Decimal" onclick="clicks('.')">.</button>
+    <button id="0" onclick="clicks('0')">0</button>
+    <button id="Equals" onclick="calculateResult()"style="width: 14vw;">=</button>
+    </div>
+
+</div>
+        </div>
+    </div>
+    <script src="calculator_func.js"></script>
+</body>
+</html>
